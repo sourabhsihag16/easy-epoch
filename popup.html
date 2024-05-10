@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="css/ui.css" />
+    <link type="text/css" rel="stylesheet" href="css/jquery-ui.min.css" />
+    <script type="text/javascript" src="jquery-1.9.1.js"></script>
+    <script type="text/javascript" src="jquery-ui.min.js"></script>
+    <script type="text/javascript" src="jquery-ui-timepicker-addon.js"></script>
+
+
+    <script type="text/javascript" src="popup.js"></script>
+
+
+
+</head>
+
+<body style="width:500px; height:400px">
+    <div id="container">
+        <!-- current epoch section -->
+        <div id="epoch-section" class="section">
+            <span>The current Unix epoch time is</span>
+            <span id="current-epoch"></span>
+            <span id="clock-stopped"></span>
+        </div>
+
+        <!-- timestamp to human time section -->
+        <div class="section">
+            <span><input id="unix-time-input" type="text" length="15"></input></span>
+            <span id="convert-to-human" class="convert">Timestamp to human date</span>
+        </div>
+
+        <div id="human-date-output-section" class="section" style="display:none">
+            <span><b>GMT: </b></span><span id="human-output-gmt"></span>
+            <br>
+            <span><b>Your local time: </b><span id="human-output-local"></span>
+                <br>
+                <span><b>Relative time: </b></span><span id="relative-time"></span>
+        </div>
+
+        <!-- human time to timestamp section -->
+        <div id="date-to-human-section" class="section">
+            <span><input type="text" id="human-time-input"></input></span>
+            <span id="convert-to-timestamp" class="convert">Human date to timestamp</span>
+        </div>
+
+        <div id="unix-date-output-section" class="section" style="display:none">
+            <span><b>Unix time: </b></span><span id="unix-time-output"></span>
+        </div>
+
+    </div>
+</body>
+
+</html>

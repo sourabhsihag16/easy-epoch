@@ -1,0 +1,27 @@
+#ec-bubble {
+    background-color: rgba(173, 216, 230, 0.7);
+    /* Adjust the alpha value for transparency */
+    border-radius: 10px;
+    /* Slightly increased border radius */
+    box-shadow: 0 0 10px 2px #555;
+    color: black;
+    left: 10px;
+    /* Slightly shifted from the left edge */
+    padding: 10px;
+    /* Increased padding for better readability */
+    position: absolute;
+    top: 10px;
+    /* Slightly shifted from the top edge */
+    visibility: hidden;
+    width: fit-content;
+    z-index: 10000;
+}
+
+#ec-bubble-text {
+    background-color: rgba(173, 216, 230, 0.9);
+    color: black;
+    float: left;
+    font-family: monospace;
+    font-size: 10pt;
+    margin: 0;
+}
